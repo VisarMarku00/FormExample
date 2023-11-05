@@ -1,23 +1,216 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 body {
-    background-color: #faf9f6;
-    display: flex;
-    flex-direction: column;
-    font-family: "Courier New", Courier, monospace;
-    min-height: 100vh;
-    margin: 0px 0.5rem;
-    align-items: center;
-  }
-
-#logo{
-    padding: 0rem 0rem 0rem 2rem;
-    max-width: 200px;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-#street{
-    max-width: 400px;
+body {
+  /* background-image: url("./media/japan4.jpg");
+  background-size: contain;
+  background-repeat: no-repeat; */
+  background-color: #faf9f6;
+  font-family: "Courier New", Courier, monospace;
 }
 
-footer {
-    margin-top: auto;
-    padding: 2rem;
-  }
+#logo {
+  margin: 1rem 0rem 0rem 0rem;
+  max-width: 200px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.form-content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+form{
+  flex: 1 1 auto;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0px 0px 5px 0px;
+}
+
+input{
+  width: 300px;
+  height: 20px;
+  border: 3px solid #a192ac;
+  border-radius: 0.4rem;
+  transition: 0.5s;
+  outline: none;
+}
+
+input:focus{
+  border: 3px solid #5b09c7;
+}
+
+.message{
+  color: #d10505;
+  border: 2px solid #d10505;
+  border-radius: 0.2rem;
+  padding: 0.2rem 0.4rem;
+  margin: 1rem 0rem;
+  width: fit-content;
+}
+
+#street {
+  min-height: 100vh;
+  min-width: 67vh;
+  background-image: url("./media/japan4.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#text {
+  font-size: xx-large;
+  margin: 10rem 0rem 5rem 0rem;
+}
+
+button {
+  font-size: large;
+  border-radius: 2rem;
+  border-color: transparent;
+  background-color: rgb(190, 9, 33);
+  padding: 0.5rem 1rem;
+  margin: 1rem 0rem;
+}
+
+a {
+  color: rgb(236, 17, 138);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.bottom-text {
+  margin: 0rem 2rem 2rem 0rem;
+}

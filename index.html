@@ -9,59 +9,46 @@
 </head>
 
 <body>
-    <header>
-        <img id="logo" src="./media/travel japan-logo.png" alt="Travel japan logo">
-    </header>
     <div class="main-content">
-        <img id="street" src="./media/japan4.jpg" alt="Japan street">
+        <div id="street"></div>
 
-        <form action="" method="post">
-            <ul>
-                <section>
-                    <p> Travel to Japan, the land of mountains, traditions and anime.</p>
+        <div class="form-content">
+            <img id="logo" src="./media/travel japan-logo.png" alt="japan-logo">
+            <form action="" method="">
+                <div id="text"> Travel to Japan, the land of mountains, traditions and anime.</div>
 
-                    <fieldset>
-                        <legend>Create Account</legend>
-                        <li>
-                            <div class="input-container">
-                                <label for="first_name">FIRST NAME</label>
-                                <input type="text" name="first_name" id="first_name">
-                            </div>
-                            <div class="input-container">
-                                <label for="last_name">LAST NAME</label>
-                                <input type="text" name="last_name" id="last_name">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="input-container">
-                                <label for="email">EMAIL</label>
-                                <input type="text" name="email" id="email">
-                            </div>
-                            <div class="input-container">
-                                <label for="phone_number">PHONE NUMBER</label>
-                                <input type="text" name="phone_number" id="phone_number">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="input-container">
-                                <label for="password">PASSWORD</label>
-                                <input type="text" name="password" id="password">
-                            </div>
-                            <div class="input-container">
-                                <label for="confirm_password">CONFIRM PASSWORD</label>
-                                <input type="text" name="confirm_password" id="confirm_password">
-                            </div>
-                        </li>
-                    </fieldset>
-                </section>
+                <div class="input-container">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" name="first_name" id="first_name" required>
+                </div>
+                <div class="input-container">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" name="last_name" id="last_name" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input-container">
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input type="tel" name="phone_number" id="phone_number" required>
+                </div>
+                <div class="input-container">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" required>
+                    <p id="password_message" class="message" hidden></p>
+                </div>
+                <div class="input-container">
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm_password" id="confirm_password" required>
+                    <p id="confirm_password_message" class="message" hidden></p>
+                </div>
                 <button>Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
-            </ul>
-        </form>
+            </form>
+            <div class="bottom-text">Visar Marku</div>
+        </div>
     </div>
-    <footer>
-        Visar Marku
-    </footer>
 </body>
 <script src="./script.js"></script>
 
